@@ -27,4 +27,7 @@ interface TrendingDao {
 
     @Query("SELECT * from developers")
     fun getTrendingDevelopers(): List<TrendingDevelopers>
+
+    @Query("SELECT * from repositories WHERE url = :url")
+    fun getRepoDetails(url: String): TrendingRepositories
 }

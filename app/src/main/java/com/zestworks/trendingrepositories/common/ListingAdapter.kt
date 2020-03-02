@@ -11,7 +11,7 @@ import com.zestworks.data.model.TrendingRepositories
 import com.zestworks.trendingrepositories.R
 import de.hdodenhof.circleimageview.CircleImageView
 
-class ListingAdapter(var listItems: List<Any>): RecyclerView.Adapter<ListingAdapter.Listholder>() {
+class ListingAdapter(var listItems: List<Any>, val onClick: OnCLick? = null): RecyclerView.Adapter<ListingAdapter.Listholder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Listholder {
         val view =
@@ -38,6 +38,11 @@ class ListingAdapter(var listItems: List<Any>): RecyclerView.Adapter<ListingAdap
                 .load(item.avatar)
                 .placeholder(R.drawable.ic_launcher_background)
                 .into(holder.imageView)
+            if(onClick != null) {
+                holder.itemView.setOnClickListener {
+                    onClick.onClick(item.url)
+                }
+            }
         } else if(item is TrendingDevelopers) {
             holder.title.text = item.name
             holder.description.text = item.username
@@ -45,6 +50,11 @@ class ListingAdapter(var listItems: List<Any>): RecyclerView.Adapter<ListingAdap
                 .load(item.avatar)
                 .placeholder(R.drawable.ic_launcher_background)
                 .into(holder.imageView)
+            if(onClick != null) {
+                holder.itemView.setOnClickListener {
+                    onClick.onClick(item.url)
+                }
+            }
         }
     }
 
@@ -52,5 +62,9 @@ class ListingAdapter(var listItems: List<Any>): RecyclerView.Adapter<ListingAdap
         val title = itemView.findViewById<TextView>(R.id.title)
         val description = itemView.findViewById<TextView>(R.id.description)
         val imageView = itemView.findViewById<CircleImageView>(R.id.author_image)
+    }
+
+    interface OnCLick {
+        fun onClick(url: String)
     }
 }

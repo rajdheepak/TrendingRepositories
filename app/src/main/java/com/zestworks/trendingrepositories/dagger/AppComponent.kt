@@ -4,6 +4,7 @@ import android.app.Application
 import com.zestworks.trendingrepositories.TrendingApplication
 import com.zestworks.trendingrepositories.developers.domain.DeveloperListRepositoryImpl
 import com.zestworks.trendingrepositories.repositories.domain.RepoListRepositoryImpl
+import com.zestworks.trendingrepositories.repositoryDetails.domain.RepoDetailsRepositoryImpl
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.support.AndroidSupportInjectionModule
@@ -18,6 +19,8 @@ interface AppComponent {
     fun inject(trendingApplication: RepoListRepositoryImpl)
 
     fun inject(developerListRepositoryImpl: DeveloperListRepositoryImpl)
+
+    fun inject(repoDetailsRepositoryImpl: RepoDetailsRepositoryImpl)
 
     @Component.Builder
     interface Builder {

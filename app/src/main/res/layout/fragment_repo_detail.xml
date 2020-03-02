@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".repositoryDetails.ui.RepoDetailFragment">
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:id="@+id/url"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="#52575c"
+            android:ellipsize="marquee"
+            android:layout_margin="16dp"
+            android:lines="2"
+            tools:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:text="•"
+            app:layout_constraintTop_toBottomOf="@id/url"
+            android:textAlignment="textStart"
+            android:textSize="75sp"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintStart_toStartOf="@id/url"
+            android:id="@+id/lang_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            app:layout_constraintStart_toEndOf="@id/lang_image"
+            tools:text="c++"
+            android:layout_marginStart="16dp"
+            android:textColor="#52575C"
+            android:id="@+id/language_text"
+            app:layout_constraintTop_toTopOf="@id/lang_image"
+            app:layout_constraintBottom_toBottomOf="@id/lang_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/star_image"
+            app:layout_constraintStart_toStartOf="@id/lang_image"
+            app:layout_constraintTop_toBottomOf="@id/lang_image"
+            android:src="@mipmap/star"
+            android:layout_width="32dp"
+            android:layout_height="32dp">
+        </ImageView>
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:id="@+id/star_text"
+            android:textColor="#52575C"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toEndOf="@id/star_image"
+            app:layout_constraintTop_toTopOf="@id/star_image"
+            tools:text="14352"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/fork_image"
+            app:layout_constraintStart_toStartOf="@id/star_image"
+            app:layout_constraintTop_toBottomOf="@id/star_image"
+            android:layout_marginTop="32dp"
+            android:src="@mipmap/fork"
+            android:layout_width="32dp"
+            android:layout_height="32dp">
+        </ImageView>
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:id="@+id/fork_text"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toEndOf="@id/fork_image"
+            app:layout_constraintTop_toTopOf="@id/fork_image"
+            android:textColor="#52575C"
+            tools:text="14352"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

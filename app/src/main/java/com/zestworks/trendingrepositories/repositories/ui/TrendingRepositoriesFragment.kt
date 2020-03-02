@@ -7,6 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.os.bundleOf
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.zestworks.data.model.LCE
@@ -37,7 +39,13 @@ class TrendingRepositoriesFragment : Fragment() {
         repositories_error.visibility = View.GONE
         repo_list_view.layoutManager = LinearLayoutManager(context)
         repo_list_view.addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
-        repo_list_view.adapter = ListingAdapter(listOf())
+        repo_list_view.adapter = ListingAdapter(listOf(), object: ListingAdapter.OnCLick {
+            override fun onClick(url: String) {
+                var bundle = bundleOf("url" to url)
+                Navigation.findNavController(activity!!,R.id.nav_host_fragment).navigate(R.id.action_trendingPagerFragment_to_repoDetailFragment, bundle)
+            }
+
+        })
     }
 
     override fun onStart() {

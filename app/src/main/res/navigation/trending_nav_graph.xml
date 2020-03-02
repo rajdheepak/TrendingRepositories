@@ -9,5 +9,15 @@
         android:id="@+id/trendingPagerFragment"
         android:name="com.zestworks.trendingrepositories.TrendingPagerFragment"
         android:label="fragment_trending_pager"
-        tools:layout="@layout/fragment_trending_pager" />
+        tools:layout="@layout/fragment_trending_pager" >
+        <action
+            android:id="@+id/action_trendingPagerFragment_to_repoDetailFragment"
+            app:destination="@id/repoDetailFragment">
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/repoDetailFragment"
+        android:name="com.zestworks.trendingrepositories.repositoryDetails.ui.RepoDetailFragment"
+        android:label="fragment_repo_detail"
+        tools:layout="@layout/fragment_repo_detail" />
 </navigation>
