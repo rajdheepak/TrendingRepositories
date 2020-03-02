@@ -9,9 +9,6 @@ data class TrendingRepositories(
 	@field:SerializedName("forks")
 	val forks: Int = 0,
 
-//	@field:SerializedName("builtBy")
-//	val builtBy: List<BuiltByItem> = null,
-
 	@field:SerializedName("author")
 	val author: String = "",
 
@@ -38,16 +35,4 @@ data class TrendingRepositories(
 
 	@field:SerializedName("currentPeriodStars")
 	val currentPeriodStars: Int = 0
-)
-
-data class BuiltByItem(
-
-	@field:SerializedName("href")
-	val href: String = "",
-
-	@field:SerializedName("avatar")
-	val avatar: String = "",
-
-	@field:SerializedName("username")
-	val username: String = ""
 )

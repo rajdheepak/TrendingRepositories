@@ -9,6 +9,7 @@ import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
+import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
@@ -24,18 +25,18 @@ class AppModule {
     @Provides
     @Singleton
     fun provideRetrofit(okHttpClient: OkHttpClient): NetworkService {
-        return Retrofit.Builder()
+        return  Retrofit.Builder()
             .baseUrl("https://github-trending-api.now.sh")
             .client(okHttpClient)
             .addConverterFactory(GsonConverterFactory.create())
-            .build()
-            .create(NetworkService::class.java)
+            .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+            .build().create(NetworkService::class.java)
     }
 
     @Provides
     @Singleton
     fun provideDb(application: Application): TrendingDao {
-        return Room.databaseBuilder(application,TrendingRepositoriesDb::class.java,"trending").build().trendingDao
+        return Room.databaseBuilder(application,TrendingRepositoriesDb::class.java,"trending2").build().trendingDao
     }
 
 }
