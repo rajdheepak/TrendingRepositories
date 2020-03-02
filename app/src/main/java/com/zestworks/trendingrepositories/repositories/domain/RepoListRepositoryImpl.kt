@@ -30,6 +30,7 @@ class RepoListRepositoryImpl: RepoListRepository {
     @SuppressLint("CheckResult")
     override fun getTrendingRepositories(responseListener: TrendingReposResponseListener) {
         if(NetworkUtils.isConnected()) {
+            fetchFromLocal(responseListener)
             networkService.fetchTrendingRepositories()
                 .subscribeOn(Schedulers.io())
                 .doOnError {
@@ -48,14 +49,18 @@ class RepoListRepositoryImpl: RepoListRepository {
                     }
                 }
         } else {
-            GlobalScope.launch {
-                val trendingRepositories = trendingDao.getTrendingRepositories()
-                withContext(Dispatchers.Main) {
-                    if (trendingRepositories.isNotEmpty()) {
-                        responseListener.onResponse(Data.Success(trendingRepositories))
-                    } else {
-                        responseListener.onResponse(Data.Empty)
-                    }
+            fetchFromLocal(responseListener)
+        }
+    }
+
+    private fun fetchFromLocal(responseListener: TrendingReposResponseListener) {
+        GlobalScope.launch {
+            val trendingRepositories = trendingDao.getTrendingRepositories()
+            withContext(Dispatchers.Main) {
+                if (trendingRepositories.isNotEmpty()) {
+                    responseListener.onResponse(Data.Success(trendingRepositories))
+                } else {
+                    responseListener.onResponse(Data.Empty)
                 }
             }
         }

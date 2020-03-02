@@ -29,6 +29,7 @@ class DeveloperListRepositoryImpl: DeveloperListRepository {
     @SuppressLint("CheckResult")
     override fun getTrendingDevelopers(responseListener: TrendingDevelopersResponseListener) {
         if(NetworkUtils.isConnected()) {
+            fetchFromLocal(responseListener)
             networkService.fetchTrendingDevelopers()
                 .subscribeOn(Schedulers.io())
                 .doOnError {
@@ -47,14 +48,18 @@ class DeveloperListRepositoryImpl: DeveloperListRepository {
                     }
                 }
         } else {
-            GlobalScope.launch {
-                val trendingDevelopers = trendingDao.getTrendingDevelopers()
-                withContext(Dispatchers.Main) {
-                    if (trendingDevelopers.isNotEmpty()) {
-                        responseListener.onResponse(Data.Success(trendingDevelopers))
-                    } else {
-                        responseListener.onResponse(Data.Empty)
-                    }
+            fetchFromLocal(responseListener)
+        }
+    }
+
+    private fun fetchFromLocal(responseListener: TrendingDevelopersResponseListener) {
+        GlobalScope.launch {
+            val trendingDevelopers = trendingDao.getTrendingDevelopers()
+            withContext(Dispatchers.Main) {
+                if (trendingDevelopers.isNotEmpty()) {
+                    responseListener.onResponse(Data.Success(trendingDevelopers))
+                } else {
+                    responseListener.onResponse(Data.Empty)
                 }
             }
         }
