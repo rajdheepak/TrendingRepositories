@@ -68,4 +68,6 @@ dependencies {
     implementation "androidx.navigation:navigation-fragment:2.0.0" //navigation host
     implementation "androidx.navigation:navigation-ui:2.0.0"
 
+    implementation 'com.facebook.shimmer:shimmer:0.5.0' //Shimmer
+
 }
