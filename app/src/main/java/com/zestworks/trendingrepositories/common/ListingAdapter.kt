@@ -41,6 +41,10 @@ class ListingAdapter(var listItems: List<Any>): RecyclerView.Adapter<ListingAdap
         } else if(item is TrendingDevelopers) {
             holder.title.text = item.name
             holder.description.text = item.username
+            Glide.with(holder.imageView)
+                .load(item.avatar)
+                .placeholder(R.drawable.ic_launcher_background)
+                .into(holder.imageView)
         }
     }
 
