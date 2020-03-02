@@ -2,6 +2,8 @@ package com.zestworks.trendingrepositories.dagger
 
 import android.app.Application
 import com.zestworks.trendingrepositories.TrendingApplication
+import com.zestworks.trendingrepositories.developers.domain.DeveloperListRepositoryImpl
+import com.zestworks.trendingrepositories.repositories.domain.RepoListRepositoryImpl
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.support.AndroidSupportInjectionModule
@@ -12,6 +14,10 @@ import javax.inject.Singleton
 interface AppComponent {
 
     fun inject(trendingApplication: TrendingApplication)
+
+    fun inject(trendingApplication: RepoListRepositoryImpl)
+
+    fun inject(developerListRepositoryImpl: DeveloperListRepositoryImpl)
 
     @Component.Builder
     interface Builder {

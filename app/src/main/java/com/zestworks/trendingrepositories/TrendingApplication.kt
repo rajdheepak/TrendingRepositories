@@ -2,6 +2,7 @@ package com.zestworks.trendingrepositories
 
 import android.app.Application
 import androidx.fragment.app.Fragment
+import com.blankj.utilcode.util.Utils
 import com.zestworks.trendingrepositories.dagger.AppComponentProvider
 import com.zestworks.trendingrepositories.dagger.DaggerAppComponent
 import dagger.android.AndroidInjector
@@ -23,5 +24,6 @@ class TrendingApplication: Application(), HasSupportFragmentInjector {
         val appComponent = DaggerAppComponent.builder().application(this).build()
         appComponent.inject(this)
         AppComponentProvider.appComponent = appComponent
+        Utils.init(this)
     }
 }

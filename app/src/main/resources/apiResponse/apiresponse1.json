@@ -1,0 +1,287 @@
+[
+  {
+    "username": "arvidn",
+    "name": "Arvid Norberg",
+    "url": "https://github.com/arvidn",
+    "avatar": "https://avatars1.githubusercontent.com/u/661450",
+    "repo": {
+      "name": "libtorrent",
+      "description": "an efficient feature complete C++ bittorrent implementation",
+      "url": "https://github.com/arvidn/libtorrent"
+    }
+  },
+  {
+    "username": "hrydgard",
+    "name": "Henrik Rydgård",
+    "url": "https://github.com/hrydgard",
+    "avatar": "https://avatars0.githubusercontent.com/u/130929",
+    "repo": {
+      "name": "ppsspp\nhttps://discord.gg/5NJB6dD",
+      "description": "A PSP emulator for Android, Windows, Mac and Linux, written in C++. Want to contribute? Join us on Discord at https://discord.gg/5NJB6dD or in #ppsspp on freenode (IRC) or just send pull requests / issues. For discussion use the forums on ppsspp.org.",
+      "url": "https://github.com/hrydgard/ppsspp"
+    }
+  },
+  {
+    "username": "mattn",
+    "name": "mattn",
+    "url": "https://github.com/mattn",
+    "sponsorUrl": "https://github.com/sponsors/mattn",
+    "avatar": "https://avatars0.githubusercontent.com/u/10111",
+    "repo": {
+      "name": "emmet-vim\nhttp://emmet.io/",
+      "description": "emmet for vim: http://emmet.io/",
+      "url": "https://github.com/mattn/emmet-vim"
+    }
+  },
+  {
+    "username": "kyleconroy",
+    "name": "Kyle Conroy",
+    "url": "https://github.com/kyleconroy",
+    "sponsorUrl": "https://github.com/sponsors/kyleconroy",
+    "avatar": "https://avatars2.githubusercontent.com/u/34893",
+    "repo": {
+      "name": "sqlc",
+      "description": "Generate type safe Go from SQL",
+      "url": "https://github.com/kyleconroy/sqlc"
+    }
+  },
+  {
+    "username": "CastagnaIT",
+    "name": "Stefano Gottardo",
+    "url": "https://github.com/CastagnaIT",
+    "avatar": "https://avatars2.githubusercontent.com/u/3257156",
+    "repo": {
+      "name": "plugin.video.netflix",
+      "description": "InputStream based Netflix plugin for Kodi",
+      "url": "https://github.com/CastagnaIT/plugin.video.netflix"
+    }
+  },
+  {
+    "username": "sdispater",
+    "name": "Sébastien Eustace",
+    "url": "https://github.com/sdispater",
+    "avatar": "https://avatars2.githubusercontent.com/u/555648",
+    "repo": {
+      "name": "pendulum",
+      "description": "Python datetimes made easy",
+      "url": "https://github.com/sdispater/pendulum"
+    }
+  },
+  {
+    "username": "unixorn",
+    "name": "Joe Block",
+    "url": "https://github.com/unixorn",
+    "avatar": "https://avatars0.githubusercontent.com/u/23920",
+    "repo": {
+      "name": "awesome-zsh-plugins",
+      "description": "A collection of ZSH frameworks, plugins, themes and tutorials.",
+      "url": "https://github.com/unixorn/awesome-zsh-plugins"
+    }
+  },
+  {
+    "username": "kt3k",
+    "name": "Yoshiya Hinosawa",
+    "url": "https://github.com/kt3k",
+    "sponsorUrl": "https://github.com/sponsors/kt3k",
+    "avatar": "https://avatars3.githubusercontent.com/u/613956",
+    "repo": {
+      "name": "coveralls-gradle-plugin",
+      "description": "👨‍🔧 gradle plugin for coveralls",
+      "url": "https://github.com/kt3k/coveralls-gradle-plugin"
+    }
+  },
+  {
+    "username": "jethrokuan",
+    "name": "Jethro Kuan",
+    "url": "https://github.com/jethrokuan",
+    "avatar": "https://avatars0.githubusercontent.com/u/1667473",
+    "repo": {
+      "name": "z",
+      "description": "Pure-fish z directory jumping",
+      "url": "https://github.com/jethrokuan/z"
+    }
+  },
+  {
+    "username": "jesseduffield",
+    "name": "Jesse Duffield",
+    "url": "https://github.com/jesseduffield",
+    "sponsorUrl": "https://github.com/sponsors/jesseduffield",
+    "avatar": "https://avatars0.githubusercontent.com/u/8456633",
+    "repo": {
+      "name": "lazygit",
+      "description": "simple terminal UI for git commands",
+      "url": "https://github.com/jesseduffield/lazygit"
+    }
+  },
+  {
+    "username": "cclauss",
+    "name": "Christian Clauss",
+    "url": "https://github.com/cclauss",
+    "avatar": "https://avatars1.githubusercontent.com/u/3709715",
+    "repo": {
+      "name": "Ten-lines-or-less",
+      "description": "Python scripts that are short but useful or interesting",
+      "url": "https://github.com/cclauss/Ten-lines-or-less"
+    }
+  },
+  {
+    "username": "brianegan",
+    "name": "Brian Egan",
+    "url": "https://github.com/brianegan",
+    "avatar": "https://avatars3.githubusercontent.com/u/126604",
+    "repo": {
+      "name": "flutter_architecture_samples",
+      "description": "TodoMVC for Flutter",
+      "url": "https://github.com/brianegan/flutter_architecture_samples"
+    }
+  },
+  {
+    "username": "tiangolo",
+    "name": "Sebastián Ramírez",
+    "url": "https://github.com/tiangolo",
+    "avatar": "https://avatars0.githubusercontent.com/u/1326112",
+    "repo": {
+      "name": "fastapi",
+      "description": "FastAPI framework, high performance, easy to learn, fast to code, ready for production",
+      "url": "https://github.com/tiangolo/fastapi"
+    }
+  },
+  {
+    "username": "mrdoob",
+    "name": "Mr.doob",
+    "url": "https://github.com/mrdoob",
+    "avatar": "https://avatars2.githubusercontent.com/u/97088",
+    "repo": {
+      "name": "three.js",
+      "description": "JavaScript 3D library.",
+      "url": "https://github.com/mrdoob/three.js"
+    }
+  },
+  {
+    "username": "MaikuB",
+    "name": "Michael Bui",
+    "url": "https://github.com/MaikuB",
+    "avatar": "https://avatars0.githubusercontent.com/u/25263378",
+    "repo": {
+      "name": "flutter_local_notifications",
+      "description": "A Flutter plugin for displaying local notifications on Android and iOS",
+      "url": "https://github.com/MaikuB/flutter_local_notifications"
+    }
+  },
+  {
+    "username": "passsy",
+    "name": "Pascal Welsch",
+    "url": "https://github.com/passsy",
+    "sponsorUrl": "https://github.com/sponsors/passsy",
+    "avatar": "https://avatars0.githubusercontent.com/u/1096485",
+    "repo": {
+      "name": "android-HoloCircularProgressBar",
+      "description": "Holo Circular ProgressBar",
+      "url": "https://github.com/passsy/android-HoloCircularProgressBar"
+    }
+  },
+  {
+    "username": "DylanVann",
+    "name": "Dylan Vann",
+    "url": "https://github.com/DylanVann",
+    "avatar": "https://avatars3.githubusercontent.com/u/1537615",
+    "repo": {
+      "name": "react-native-fast-image",
+      "description": "🚩 FastImage, performant React Native image component.",
+      "url": "https://github.com/DylanVann/react-native-fast-image"
+    }
+  },
+  {
+    "username": "benjie",
+    "name": "Benjie Gillam",
+    "url": "https://github.com/benjie",
+    "sponsorUrl": "https://github.com/sponsors/benjie",
+    "avatar": "https://avatars1.githubusercontent.com/u/129910",
+    "repo": {
+      "name": "prettier-plugin-pg",
+      "description": "[WIP] Plugin for prettier to support formatting of PostgreSQL-flavour SQL, including function bodies in SQL, pgSQL, PLV8, plpython, etc.",
+      "url": "https://github.com/benjie/prettier-plugin-pg"
+    }
+  },
+  {
+    "username": "junegunn",
+    "name": "Junegunn Choi",
+    "url": "https://github.com/junegunn",
+    "avatar": "https://avatars3.githubusercontent.com/u/700826",
+    "repo": {
+      "name": "fzf",
+      "description": "🌸 A command-line fuzzy finder",
+      "url": "https://github.com/junegunn/fzf"
+    }
+  },
+  {
+    "username": "yangshun",
+    "name": "Yangshun Tay",
+    "url": "https://github.com/yangshun",
+    "sponsorUrl": "https://github.com/sponsors/yangshun",
+    "avatar": "https://avatars2.githubusercontent.com/u/1315101",
+    "repo": {
+      "name": "tech-interview-handbook",
+      "description": "💯 Materials to help you rock your next coding interview",
+      "url": "https://github.com/yangshun/tech-interview-handbook"
+    }
+  },
+  {
+    "username": "eps1lon",
+    "name": "Sebastian Silbermann",
+    "url": "https://github.com/eps1lon",
+    "sponsorUrl": "https://github.com/sponsors/eps1lon",
+    "avatar": "https://avatars2.githubusercontent.com/u/12292047",
+    "repo": {
+      "name": "dom-accessibility-api\nhttps://w3c.github.io/accname/",
+      "description": "Implements https://w3c.github.io/accname/",
+      "url": "https://github.com/eps1lon/dom-accessibility-api"
+    }
+  },
+  {
+    "username": "MilosKozak",
+    "name": "Milos Kozak",
+    "url": "https://github.com/MilosKozak",
+    "avatar": "https://avatars2.githubusercontent.com/u/11146458",
+    "repo": {
+      "name": "AndroidAPS",
+      "description": "",
+      "url": "https://github.com/MilosKozak/AndroidAPS"
+    }
+  },
+  {
+    "username": "tarcieri",
+    "name": "Tony Arcieri",
+    "url": "https://github.com/tarcieri",
+    "sponsorUrl": "https://github.com/sponsors/tarcieri",
+    "avatar": "https://avatars1.githubusercontent.com/u/797",
+    "repo": {
+      "name": "reia",
+      "description": "Ruby-like hybrid OOP/functional programming language for BEAM, the Erlang VM",
+      "url": "https://github.com/tarcieri/reia"
+    }
+  },
+  {
+    "username": "liuchengxu",
+    "name": "Liu-Cheng Xu",
+    "url": "https://github.com/liuchengxu",
+    "avatar": "https://avatars2.githubusercontent.com/u/8850248",
+    "repo": {
+      "name": "space-vim",
+      "description": "🍀 Lean & mean spacemacs-ish Vim distribution",
+      "url": "https://github.com/liuchengxu/space-vim"
+    }
+  },
+  {
+    "username": "spacejam",
+    "name": "Tyler Neely",
+    "url": "https://github.com/spacejam",
+    "sponsorUrl": "https://github.com/sponsors/spacejam",
+    "avatar": "https://avatars1.githubusercontent.com/u/1505488",
+    "repo": {
+      "name": "sled",
+      "description": "the champagne of beta embedded databases",
+      "url": "https://github.com/spacejam/sled"
+    }
+  }
+]

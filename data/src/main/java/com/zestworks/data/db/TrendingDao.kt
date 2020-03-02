@@ -4,6 +4,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import com.zestworks.data.model.TrendingDevelopers
 import com.zestworks.data.model.TrendingRepositories
 
 @Dao
@@ -17,4 +18,13 @@ interface TrendingDao {
 
     @Query("DELETE FROM repositories")
     fun clearTrendingRepos()
+
+    @Query("DELETE FROM developers")
+    fun clearTrendingDevelopers()
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun addTrendingDevelopers(body: List<TrendingDevelopers>)
+
+    @Query("SELECT * from developers")
+    fun getTrendingDevelopers(): List<TrendingDevelopers>
 }
