@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Trending Repositories</string>
+    <string name="app_name">Trending</string>
     <string name="repositories">Repositories</string>
     <string name="developers">Developers</string>
 </resources>
